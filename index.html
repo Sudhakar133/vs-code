@@ -1,39 +1,54 @@
 <html>
     <head>
         <title>
-            task 1
-
+            Task 2
         </title>
         <body>
-            <h1>Difference between HTTP1.1 vs HTTP2</h1>
+            <h1>Differences between Document and Window Objects</h1>
             <p>
-                HTTP1.1 <br>
-            1.There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources. <br>
-            2. It uses requests resource Inlining for use getting multiple pages <br>
-            3. It compresses data by itself.           </p>
-            <br>
-            <p>
-                HTTP2 <br>
-                1.It allows multiplexing so one TCP connection is required for multiple requests. <br>
-                2.It uses PUSH frame by server that collects all multiple pages <br>
-                3.	It uses HPACK for data compression.
+                
+                <h3>  Document Object:</h3>
+                The document object represent a web page that is loaded in the browser. By accessing the document object, we can access the element in the HTML page. With the help of document objects, we can add dynamic content to our web page. The document object can be accessed with a window.document or just document.
+                <br>
+                <br>
+                Syntax:
+
+                        document.property_name;
+                        <br>
+
+                    <br>
+                    1. All the tags, elements with attributes in HTML are part of the document. <br>
+                    2.We can access the document from a window using the window. document <br>
+                    3.Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title
+
+                        <h3>Properties of document:</h3> 
+                        
+
+                    i.)activeElement: It returns the currently active elements in the document. <br>
+                    ii.)body: It returns the contents of the body element.  <br>
+                    iii.)anchors: It returns all <a> elements that have a name attribute. <br>
+                    iv.)charSet: It returns a string, representing the documents character encoding.
+
             </p>
 
-            <h1>objects and its internal representation in Javascript</h1>
-            <p>1)Objects: <br>
-                The following code assigns a simple value (Mercedes) to a variable named car: <br>
+            <h3> Window Object:</h3>
 
-                
-                var car = "Mercedes"; <br>
-                Objects are variables too. But objects can contain many values. <br>
-                
-                The following code assigns many values (Mercedes, C-class, White and soo on) to a variable named Car: <br>
-                var car = {Make: “Mercedes”, Model: “C-Class”, Color: “White”, Fuel: Diesel, Weight: “850kg”, Mileage: “8Kmpl”, Rating: 4.5}; <br>
-                The values are written as name:value pairs <br>
-                Syntax: <br>
+            
+                        The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created. <br>
+                    <br>
+                Syntax:
 
-                var <object-name> = {key1: value1, key2: value2,... keyN: valueN}; <br>
-                 So, conclusion and definition for JS objects is “JavaScript objects are containers for named values”.</p>
+                        window.property_name; <br>
+                        <br>
+                        1.Global objects, functions, and variables of JavaScript are members of the window object. <br>
+                        2.We can access the window from the window only. i.e. window.window <br>
+                        3.Properties of the window object cannot be accessed by the document object.
+
+                        <h3>Properties of the window:</h3> <br>
+
+                        i.)Closed: It holds a Boolean value that represents whether the window is closed or not. <br>
+                        ii.)console: It returns a reference to the console object which provides access to the browsers debugging console. <br>
+                        iii.)controllers: It returns the XUL controller objects for the current Chrome window.
         </body>
     </head>
 </html>
